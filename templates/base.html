@@ -8,18 +8,37 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
 <nav class="navbar navbar-dark bg-dark">
     <div class="container">
-        <span class="navbar-brand mb-0 h1">Hackathon2026</span>
+        <span class="navbar-brand mb-0 h1 mx-auto">Fitnice</span>
+        <span class="navbar-toggler-icon cliakable" type="button"></span>
     </div>
 </nav>
 
-<div class="container mt-4">
+<main class="container mt-4flex-grow-1">
     {% block content %}
+    <div class="container">
+        <p>
+            We aim to support beginners on their fitness and nutrition journey by providing clear, personalized guidance. On this platform, users can explore exercises tailored to their goals, experience level, and preferred workout style. In addition, we offer practical nutrition guidelines designed to help individuals make informed choices and stay consistent with their fitness plans.
+
+            The goal of this website is to help beginners build confidence, develop healthy habits, and better understand both exercise and nutrition. By combining structured workouts with accessible dietary guidance, we empower users to take meaningful steps toward achieving their fitness goals.
+        </p>
+    </main>
+
+    <div>
+        <span class="btn btn-primary">Continue to fitness plan</span>
+    </div>
     {% endblock %}
 </div>
+
+<footer class="bg-dark text-white mt-auto py-4">
+    <div class="container text-center">
+
+    </div>
+</footer>
+
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

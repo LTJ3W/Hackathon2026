@@ -10,34 +10,49 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
 
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container">
-        <span class="navbar-brand mb-0 h1 mx-auto">Fitnice</span>
+        <a class="navbar-brand mx-auto fw-bold fs-3" href="#">Fitnice</a>
         <span class="navbar-toggler-icon cliakable" type="button"></span>
     </div>
 </nav>
 
-<main class="container mt-4flex-grow-1">
+<main class="container flex-grow-1 d-flex align-items-center py-5">
     {% block content %}
-    <div class="container">
-        <p>
-            We aim to support beginners on their fitness and nutrition journey by providing clear, personalized guidance. On this platform, users can explore exercises tailored to their goals, experience level, and preferred workout style. In addition, we offer practical nutrition guidelines designed to help individuals make informed choices and stay consistent with their fitness plans.
+        <div class="row justify-content-center w-100">
+            <div class="col-lg-8">
+                <div class="card shadow border-0 rounded-4">
+                    <div class="card-body p-5 text-center">
+                        <h1 class="display-5 fw-bold mb-4">Welcome to Fitnice</h1>
 
-            The goal of this website is to help beginners build confidence, develop healthy habits, and better understand both exercise and nutrition. By combining structured workouts with accessible dietary guidance, we empower users to take meaningful steps toward achieving their fitness goals.
-        </p>
-    </main>
+                        <p class="lead text-muted mb-4">
+                            We aim to support beginners on their fitness and nutrition journey by providing
+                            clear, personalized guidance. On this platform, users can explore exercises
+                            tailored to their goals, experience level, and preferred workout style.
+                        </p>
 
-    <div>
-        <span class="btn btn-primary">Continue to fitness plan</span>
-    </div>
+                        <p class="text-muted mb-4">
+                            In addition, we offer practical nutrition guidelines designed to help users make
+                            informed choices, stay consistent, and build confidence as they work toward their
+                            fitness goals.
+                        </p>
+
+                        <a href="{% url 'dashboard' %}" class="btn btn-primary btn-lg px-4 rounded-pill">
+                            Continue to fitness plan
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     {% endblock %}
-</div>
+</main>
 
-<footer class="bg-dark text-white mt-auto py-4">
-    <div class="container text-center">
-
-    </div>
-</footer>
+<footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-1 fw-semibold">Fitnice</p>
+            <p class="mb-0 small">Helping beginners build healthier habits through fitness and nutrition.</p>
+        </div>
+    </footer>
 
 
 <!-- Bootstrap JS -->

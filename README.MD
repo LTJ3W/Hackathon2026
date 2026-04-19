@@ -32,9 +32,54 @@ FitGuide solves this by giving users a simple platform with structured fitness a
 
 ## Features
 
-- Personalized fitness plans
-- Nutrition guidance and meal suggestions
-- Beginner-friendly recommendations
-- Clean and simple user experience
+### Fitness Assessment
+Users complete a short form including:
+- fitness goals (weight loss, muscle gain, maintenance)
+- activity level
+- available workout days
+
+The system generates a structured weekly plan based on this information.
+
+### Workout Plan Generation
+Plans are generated using a rule-based system that:
+- filters exercises by difficulty and category
+- distributes exercises across multiple days
+- focuses on goal-specific training
+
+### Nutrition Guidance
+The system recommends ingredients based on user goals:
+- high protein for muscle gain
+- lower calorie density for weight loss
+- balanced options for general health
+
+### Assistant Page
+A separate assistant interface allows users to ask:
+- workout-related questions
+- nutrition questions
+- beginner fitness guidance
+
+## Tech Stack
+
+- Backend: Django
+- Frontend: HTML, CSS, JavaScript
+- Data: JSON datasets (exercises and ingredients)
+- Styling: Bootstrap + custom CSS
+
+## Architecture
+
+The application uses a modular structure:
+
+- `views.py` → request handling
+- `services/ai_coach.py` → recommendation logic and assistant responses
+- `templates/` → UI rendering
+- `static/` → CSS and JavaScript
+
+The assistant is decoupled from the main plan generation system, allowing independent interaction.
+
+## Setup
+
+1. Install dependencies:
+   ```bash
+   pip install django
 
 

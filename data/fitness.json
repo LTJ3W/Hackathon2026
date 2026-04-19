@@ -3019,6 +3019,368 @@
         ],
         "template_key": "intermediate_muscle_gain"
       }
+    },
+    {
+      "plan_number": 9,
+      "user_answers": {
+        "age": "15",
+        "height": "1243",
+        "weight": "12",
+        "nutrition": "good",
+        "meals_per_day": "3-4",
+        "eat_out": "1-2",
+        "active": "yes",
+        "exercise_days": "3-4",
+        "goal": "build_muscle"
+      },
+      "plan": {
+        "level": "intermediate",
+        "goal": "muscle_gain",
+        "goal_label": "Build Muscle",
+        "title": "Intermediate Hypertrophy Split",
+        "description": "A 4-day hypertrophy-focused split for intermediate lifters aiming to build more muscle.",
+        "benefits": "This plan adds training volume where it matters most and supports steady strength and size gains.",
+        "days_per_week": 4,
+        "ingredient_priorities": [
+          {
+            "id": 1,
+            "name": "Chicken Breast",
+            "category": "protein",
+            "calories_per_100g": 165,
+            "protein_g": 31,
+            "carbs_g": 0,
+            "fat_g": 3.6,
+            "benefits": [
+              "High protein supports muscle growth and recovery",
+              "Low fat makes it ideal for weight loss diets"
+            ],
+            "goals": [
+              "muscle_gain",
+              "weight_loss"
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Beef",
+            "category": "protein",
+            "calories_per_100g": 250,
+            "protein_g": 26,
+            "carbs_g": 0,
+            "fat_g": 15,
+            "benefits": [
+              "Rich in iron and supports strength",
+              "High protein content helps muscle growth"
+            ],
+            "goals": [
+              "muscle_gain"
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Tilapia",
+            "category": "protein",
+            "calories_per_100g": 129,
+            "protein_g": 26,
+            "carbs_g": 0,
+            "fat_g": 2.7,
+            "benefits": [
+              "Lean protein source",
+              "Low calorie option for weight loss"
+            ],
+            "goals": [
+              "weight_loss",
+              "muscle_gain"
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Tuna",
+            "category": "protein",
+            "calories_per_100g": 132,
+            "protein_g": 29,
+            "carbs_g": 0,
+            "fat_g": 1,
+            "benefits": [
+              "High protein and low fat",
+              "Supports muscle recovery"
+            ],
+            "goals": [
+              "weight_loss",
+              "muscle_gain"
+            ]
+          },
+          {
+            "id": 5,
+            "name": "Quinoa",
+            "category": "carbohydrate",
+            "calories_per_100g": 120,
+            "protein_g": 4,
+            "carbs_g": 21,
+            "fat_g": 2,
+            "benefits": [
+              "Contains complete protein",
+              "Provides sustained energy"
+            ],
+            "goals": [
+              "muscle_gain",
+              "weight_loss"
+            ]
+          },
+          {
+            "id": 6,
+            "name": "White Rice",
+            "category": "carbohydrate",
+            "calories_per_100g": 130,
+            "protein_g": 2.7,
+            "carbs_g": 28,
+            "fat_g": 0.3,
+            "benefits": [
+              "Quick source of energy",
+              "Easy to digest"
+            ],
+            "goals": [
+              "muscle_gain"
+            ]
+          }
+        ],
+        "workout_days": [
+          {
+            "day": 1,
+            "focus": "push",
+            "focus_label": "Push Day",
+            "cardio": "5 min warm-up",
+            "exercises": [
+              {
+                "id": 10,
+                "name": "Wide Push-Up",
+                "category": "push",
+                "target_muscles": [
+                  "chest"
+                ],
+                "difficulty": "beginner",
+                "description": "A push-up variation with a wider hand position to emphasize the chest."
+              },
+              {
+                "id": 27,
+                "name": "Smith Machine Shoulder Press",
+                "category": "push",
+                "target_muscles": [
+                  "shoulders"
+                ],
+                "difficulty": "beginner",
+                "description": "A shoulder press performed on a Smith machine for added stability."
+              },
+              {
+                "id": 16,
+                "name": "Skull Crusher",
+                "category": "push",
+                "target_muscles": [
+                  "triceps"
+                ],
+                "difficulty": "intermediate",
+                "description": "A lying triceps extension exercise commonly performed with an EZ bar or dumbbells."
+              },
+              {
+                "id": 9,
+                "name": "Smith Machine Bench Press",
+                "category": "push",
+                "target_muscles": [
+                  "chest"
+                ],
+                "difficulty": "beginner",
+                "description": "A bench press variation using a Smith machine for more stability."
+              },
+              {
+                "id": 24,
+                "name": "Dumbbell Shoulder Press",
+                "category": "push",
+                "target_muscles": [
+                  "shoulders"
+                ],
+                "difficulty": "beginner",
+                "description": "An overhead shoulder press performed with dumbbells."
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "focus": "pull",
+            "focus_label": "Pull Day",
+            "cardio": "5 min warm-up",
+            "exercises": [
+              {
+                "id": 46,
+                "name": "Cable Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A curl performed on a cable machine for constant tension."
+              },
+              {
+                "id": 45,
+                "name": "Preacher Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A supported curl variation that isolates the biceps."
+              },
+              {
+                "id": 50,
+                "name": "Single-Arm Cable Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A unilateral cable curl that trains one bicep at a time."
+              },
+              {
+                "id": 49,
+                "name": "Reverse Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps",
+                  "forearms"
+                ],
+                "difficulty": "intermediate",
+                "description": "A curl variation using an overhand grip to involve the forearms more."
+              },
+              {
+                "id": 47,
+                "name": "Concentration Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A seated single-arm curl that isolates the biceps."
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "focus": "legs",
+            "focus_label": "Leg Day",
+            "cardio": "5 min warm-up",
+            "exercises": [
+              {
+                "id": 77,
+                "name": "Donkey Calf Raise",
+                "category": "legs",
+                "target_muscles": [
+                  "calves"
+                ],
+                "difficulty": "intermediate",
+                "description": "A calf raise variation performed with the torso bent forward."
+              },
+              {
+                "id": 79,
+                "name": "Calf Raise on Stairs",
+                "category": "legs",
+                "target_muscles": [
+                  "calves"
+                ],
+                "difficulty": "beginner",
+                "description": "A calf raise variation performed on a step for a deeper stretch."
+              },
+              {
+                "id": 72,
+                "name": "Sumo Squat",
+                "category": "legs",
+                "target_muscles": [
+                  "glutes"
+                ],
+                "difficulty": "beginner",
+                "description": "A wide-stance squat variation that emphasizes the glutes and inner thighs."
+              },
+              {
+                "id": 76,
+                "name": "Seated Calf Raise",
+                "category": "legs",
+                "target_muscles": [
+                  "calves"
+                ],
+                "difficulty": "beginner",
+                "description": "A seated calf exercise that isolates the calf muscles."
+              },
+              {
+                "id": 58,
+                "name": "Leg Press",
+                "category": "legs",
+                "target_muscles": [
+                  "quads"
+                ],
+                "difficulty": "beginner",
+                "description": "A machine-based lower-body exercise used to build quad strength."
+              }
+            ]
+          },
+          {
+            "day": 4,
+            "focus": "push",
+            "focus_label": "Shoulder Focus Day",
+            "cardio": "5 min easy cardio",
+            "exercises": [
+              {
+                "id": 3,
+                "name": "Incline Bench Press",
+                "category": "push",
+                "target_muscles": [
+                  "chest"
+                ],
+                "difficulty": "intermediate",
+                "description": "A pressing exercise that emphasizes the upper chest."
+              },
+              {
+                "id": 10,
+                "name": "Wide Push-Up",
+                "category": "push",
+                "target_muscles": [
+                  "chest"
+                ],
+                "difficulty": "beginner",
+                "description": "A push-up variation with a wider hand position to emphasize the chest."
+              },
+              {
+                "id": 21,
+                "name": "Reverse Grip Pushdown",
+                "category": "push",
+                "target_muscles": [
+                  "triceps"
+                ],
+                "difficulty": "intermediate",
+                "description": "A pushdown variation using an underhand grip to challenge the triceps differently."
+              },
+              {
+                "id": 13,
+                "name": "Close Grip Push-Up",
+                "category": "push",
+                "target_muscles": [
+                  "chest",
+                  "triceps"
+                ],
+                "difficulty": "intermediate",
+                "description": "A push-up variation with a narrow grip that increases triceps involvement."
+              },
+              {
+                "id": 12,
+                "name": "Incline Push-Up",
+                "category": "push",
+                "target_muscles": [
+                  "chest"
+                ],
+                "difficulty": "beginner",
+                "description": "A beginner-friendly push-up variation performed with hands elevated."
+              }
+            ]
+          }
+        ],
+        "template_key": "intermediate_muscle_gain"
+      }
     }
   ]
 }

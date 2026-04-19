@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}FitGuide AI{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/chatbot.css' %}">
+
+
+<div class="assistant-page">
+    <div class="assistant-header">
+        <div class="assistant-icon-wrap">
+            <span class="bi bi-cloud-fog"></span>
+        </div>
+        <div>
+            <h1 class="assistant-title">FitGuide AI</h1>
+            <p class="assistant-description">
+                Ask beginner-friendly fitness and nutrition questions.
+            </p>
+        </div>
+    </div>
+
+    <div class="assistant-card">
+        <div id="chat-box" class="chat-box">
+            <div class="chat-message bot-message">
+                Hi! I can help with workouts, nutrition, and beginner fitness questions.
+            </div>
+        </div>
+
+        <form id="chat-form" class="chat-input-row">
+            {% csrf_token %}
+            <input
+                type="text"
+                id="chat-input"
+                name="message"
+                placeholder="Ask about workouts or nutrition..."
+                autocomplete="off"
+            >
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    window.fitGuideChatUrl = "{% url 'ai_chat' %}";
+</script>
+<script src="{% static 'js/chatbot.js' %}"></script>
+{% endblock %}

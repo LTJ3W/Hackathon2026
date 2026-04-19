@@ -3,7 +3,10 @@ import random
 from pathlib import Path
 
 from django.conf import settings
-from django.shortcuts import render, redirect
+from django.shortcuts import render
+from Hackathon2026.services.ai_coach import fitness_chat_reply
+from django.http import JsonResponse
+import json
 
 
 def _load_json(path):
@@ -501,3 +504,22 @@ def search_plans(request):
         "total": len(saved.get("plans", [])),
     }
     return render(request, "search_plans.html", context)
+
+def assistant_page(request):
+    return render(request, "assistant.html")
+
+def ai_chat(request):
+    if request.method != "POST":
+        return JsonResponse({"error": "POST required"}, status=405)
+
+    try:
+        data = json.loads(request.body)
+        message = data.get("message", "").strip()
+
+        if not message:
+            return JsonResponse({"error": "Message is required"}, status=400)
+
+        reply = fitness_chat_reply(message)
+        return JsonResponse({"reply": reply})
+    except Exception:
+        return JsonResponse({"error": "Something went wrong"}, status=500)

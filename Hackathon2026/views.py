@@ -291,44 +291,6 @@ def _pick_ingredients(ingredients, goal, categories, limit=6):
     return unique[:limit]
 
 
-def _suggest_extra_ingredients(ingredients):
-    existing = {item.get("name", "").lower() for item in ingredients}
-
-    suggestions = [
-        {
-            "name": "Greek Yogurt",
-            "category": "protein",
-            "reason": "High-protein snack that supports muscle recovery and helps with fullness."
-        },
-        {
-            "name": "Oats",
-            "category": "carbohydrate",
-            "reason": "A slow-digesting carb that supports energy and satiety."
-        },
-        {
-            "name": "Sweet Potato",
-            "category": "carbohydrate",
-            "reason": "A quality carb source that supports training energy and general health."
-        },
-        {
-            "name": "Spinach",
-            "category": "vegetable",
-            "reason": "A nutrient-dense vegetable that fits almost any health-focused meal plan."
-        },
-        {
-            "name": "Avocado",
-            "category": "healthy_fat",
-            "reason": "Adds healthy fats that support recovery and overall nutrition."
-        },
-        {
-            "name": "Almonds",
-            "category": "healthy_fat",
-            "reason": "A practical snack source of healthy fats and extra calories when needed."
-        }
-    ]
-
-    return [item for item in suggestions if item["name"].lower() not in existing]
-
 
 def _next_plan_number(saved_plans):
     plans = saved_plans.get("plans", [])
@@ -385,7 +347,6 @@ def _generate_plan(payload):
         "ingredient_priorities": prioritized_ingredients,
         "workout_days": workout_days,
         "template_key": f"{level}_{normalized_goal}",
-        "suggested_ingredients_to_add": _suggest_extra_ingredients(ingredients),
     }
 
 

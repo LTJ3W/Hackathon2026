@@ -83,3 +83,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Path to the ingredient data JSON (used by views.py).
 INGREDIENTS_JSON = BASE_DIR / 'data' / 'ingredients.json'
+EXERCISES_JSON = BASE_DIR / "data" / "exercises.json"

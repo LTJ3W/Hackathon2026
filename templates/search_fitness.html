@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block title %}Search Fitness · Fitnice{% endblock %}
+
+{% block content %}
+<div class="w-100">
+    <div class="mb-4">
+        <h1 class="fw-bold mb-1">Search Exercises</h1>
+        <p class="text-muted mb-0">
+            Browse {{ total }} exercises. Find exercise descriptions, targeted muscles, and categories.
+        </p>
+    </div>
+
+    <form method="get" class="card border-0 shadow-sm rounded-4 p-3 mb-4" data-testid="search-form">
+        <div class="row g-2 align-items-end">
+            <div class="col-md-6">
+                <label for="q" class="form-label small text-muted mb-1">Search by name or targeted muscle</label>
+                <input 
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="q"
+                    name="q"
+                    value="{{ q }}"
+                    placeholder="e.g. Push-Up, Overhead Shoulder Press, shoulders"
+                    data-testid="search-input"
+                >
+            </div>
+
+            <div class="col-md-3">
+                <label for="category" class="form-label small text-muted mb-1">Category</label>
+                <select class="form-select form-select-lg" id="category" name="category" data-testid="category-select">
+                    <option value="">All</option>
+                    {% for c in categories %}
+                        <option value="{{ c }}" {% if c == selected_category %}selected{% endif %}>
+                            {{ c|title }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+        
+            <div class="col-md-3">
+                <label for="target_muscle" class="form-label small text-muted mb-1">
+                    Targeted Muscle
+                </label>
+                <select class="form-select form-select-lg" id="target_muscle" name="target_muscle" data-testid="target_muscle-select">
+                    <option value="">All</option>
+                    {% for g in target_muscles %}
+                        <option value="{{ g }}" {% if g == selected_target_muscle %}selected{% endif %}>
+                            {{ g|cut:"_"|title }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="col-12 d-flex gap-2 mt-3">
+                <button type="submit" class="btn btn-dark px-4 rounded-pill" data-testid="search-submit">
+                    <i class="bi bi-search me-1"></i> Search
+                </button>
+                <a href="{% url 'search_fitness' %}" class="btn btn-outline-secondary rounded-pill" data-testid="clear-filters">
+                    Clear
+                </a>
+            </div>
+        </div>
+    </form>
+
+    <p class="text-muted small mb-3" data-testid="results-count">
+        Showing {{ results|length }} result{{ results|length|pluralize }}
+        {% if q %} for "{{ q }}"{% endif %}
+    </p>
+
+    {% if results %}
+        <div class="row g-3" data-testid="results-grid">
+            {% for item in results %}
+                <div class="col-md-6 col-lg-4" data-testid="exercise-card-{{ item.id }}">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-body">
+                            <span class="badge bg-light text-dark border text-uppercase small">
+                                {{ item.category }}
+                            </span>
+
+                            <h5 class="fw-bold mt-2 mb-2">{{ item.name }}</h5>
+
+                            <p class="small text-muted mb-2">
+                                Difficulty: <strong>{{ item.difficulty|title }}</strong>
+                            </p>
+
+                            <div class="mb-3">
+                                <p class="small text-muted mb-1">Target Muscles:</p>
+                                {% for m in item.target_muscles %}
+                                    <span class="badge bg-primary-subtle text-primary">{{ m|title }}</span>
+                                {% endfor %}
+                            </div>
+
+                            <p class="small mb-0">
+                                {{ item.description }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="card border-0 shadow-sm rounded-4 p-5 text-center" data-testid="empty-state">
+            <i class="bi bi-search display-4 text-muted mb-3"></i>
+            <h4 class="fw-bold">No exercises match</h4>
+            <p class="text-muted mb-0">Try a different term or clear the filters.</p>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

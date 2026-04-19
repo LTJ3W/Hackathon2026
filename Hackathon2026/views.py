@@ -8,13 +8,17 @@ def _load_ingredients():
         return json.load(f)
 
 
+def _load_fitness():
+    with open(settings.EXERCISES_JSON, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
 def home(request):
     return render(request, "base.html")
 
 
 def dashboard(request):
     if request.method == "POST":
-        # Placeholder — later you can save this or generate a plan.
         _ = {
             "age": request.POST.get("age"),
             "height": request.POST.get("height"),
@@ -31,7 +35,6 @@ def dashboard(request):
 
 
 def search_ingredients(request):
-    """Search the ingredients.json file by name, category, and goal."""
     all_items = _load_ingredients()
 
     q = (request.GET.get("q") or "").strip().lower()
@@ -71,7 +74,47 @@ def search_ingredients(request):
 
 
 def search_fitness(request):
-    return render(request, "coming_soon.html", {"label": "Fitness"})
+    all_items = _load_fitness()
+
+    q = (request.GET.get("q") or "").strip().lower()
+    category = request.GET.get("category") or ""
+    target_muscle = request.GET.get("target_muscle") or ""
+
+    results = all_items
+
+    if q:
+        results = [
+            i for i in results
+            if q in i["name"].lower()
+            or q in i["category"].lower()
+            or q in i.get("description", "").lower()
+        ]
+
+    if category:
+        results = [i for i in results if i["category"] == category]
+
+    if target_muscle:
+        results = [
+            i for i in results
+            if target_muscle in i.get("target_muscles", [])
+        ]
+
+    categories = sorted({i["category"] for i in all_items})
+    target_muscles = sorted(
+        {m for i in all_items for m in i.get("target_muscles", [])}
+    )
+
+    context = {
+        "results": results,
+        "q": q,
+        "selected_category": category,
+        "selected_target_muscle": target_muscle,
+        "categories": categories,
+        "target_muscles": target_muscles,
+        "total": len(all_items),
+    }
+
+    return render(request, "search_fitness.html", context)
 
 
 def search_plans(request):

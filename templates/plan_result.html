@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}Your Fitness Plan · Fitnice{% endblock %}
+
+{% block content %}
+<div class="w-100">
+    <div class="card border-0 shadow-sm rounded-4 p-4 p-lg-5">
+        <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-4">
+            <div>
+                <span class="badge bg-success fs-6">Plan #{{ plan_number }}</span>
+                <h1 class="fw-bold mt-3 mb-2">{{ plan.title }}</h1>
+                <p class="text-muted mb-0">
+                    {{ plan.level|title }} · {{ plan.goal_label }}
+                </p>
+            </div>
+
+            <a href="{% url 'search_plans' %}" class="btn btn-outline-dark rounded-pill">
+                Search saved plans
+            </a>
+        </div>
+
+        <div class="mb-4">
+            <h4 class="fw-bold">About this plan</h4>
+            <p class="mb-2">{{ plan.description }}</p>
+            <p class="mb-0"><strong>How it benefits you:</strong> {{ plan.benefits }}</p>
+        </div>
+
+        <div class="mb-4">
+            <h4 class="fw-bold">Ingredients to prioritize</h4>
+            <div class="row g-3">
+                {% for item in plan.ingredient_priorities %}
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border rounded-4">
+                            <div class="card-body">
+                                <span class="badge bg-light text-dark border text-uppercase small">{{ item.category }}</span>
+                                <h5 class="fw-bold mt-2">{{ item.name }}</h5>
+                                <ul class="small ps-3 mb-0">
+                                    {% for b in item.benefits %}
+                                        <li>{{ b }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <h4 class="fw-bold">Workout plan</h4>
+            <div class="row g-3">
+                {% for day in plan.workout_days %}
+                    <div class="col-12">
+                        <div class="card border rounded-4">
+                            <div class="card-body">
+                                <h5 class="fw-bold">{{ day.focus_label }}</h5>
+                                <p class="text-muted small mb-3"><strong>Cardio:</strong> {{ day.cardio }}</p>
+                                <ul class="mb-0">
+                                    {% for ex in day.exercises %}
+                                        <li>
+                                            <strong>{{ ex.name }}</strong> —
+                                            {{ ex.description }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div>
+            <h4 class="fw-bold">Suggested ingredients to add to your ingredient file</h4>
+            <ul class="mb-0">
+                {% for item in plan.suggested_ingredients_to_add %}
+                    <li>
+                        <strong>{{ item.name }}</strong> ({{ item.category }}) —
+                        {{ item.reason }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

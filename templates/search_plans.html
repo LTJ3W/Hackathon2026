@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block title %}Search Fitness Plans · Fitnice{% endblock %}
+
+{% block content %}
+<div class="w-100">
+    <div class="mb-4">
+        <h1 class="fw-bold mb-1">Search Fitness Plans</h1>
+        <p class="text-muted mb-0">
+            Search a saved plan by its plan number. Total saved plans: {{ total }}.
+        </p>
+    </div>
+
+    <form method="get" class="card border-0 shadow-sm rounded-4 p-3 mb-4">
+        <div class="row g-2 align-items-end">
+            <div class="col-md-8">
+                <label for="q" class="form-label small text-muted mb-1">Plan Number</label>
+                <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="q"
+                    name="q"
+                    value="{{ q }}"
+                    placeholder="Enter your plan number"
+                >
+            </div>
+
+            <div class="col-md-4 d-flex gap-2">
+                <button type="submit" class="btn btn-dark px-4 rounded-pill w-100">
+                    <i class="bi bi-search me-1"></i> Search
+                </button>
+                <a href="{% url 'search_plans' %}" class="btn btn-outline-secondary rounded-pill">
+                    Clear
+                </a>
+            </div>
+        </div>
+    </form>
+
+    {% if result %}
+        <div class="card border-0 shadow-sm rounded-4 p-4">
+            <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-3">
+                <div>
+                    <span class="badge bg-primary">Plan #{{ result.plan_number }}</span>
+                    <h2 class="fw-bold mt-3 mb-2">{{ result.plan.title }}</h2>
+                    <p class="text-muted mb-0">
+                        {{ result.plan.level|title }} · {{ result.plan.goal_label }}
+                    </p>
+                </div>
+            </div>
+
+            <p><strong>Description:</strong> {{ result.plan.description }}</p>
+            <p><strong>How it benefits you:</strong> {{ result.plan.benefits }}</p>
+
+            <h4 class="fw-bold mt-4">Ingredients to Prioritize</h4>
+            <div class="row g-3 mb-4">
+                {% for item in result.plan.ingredient_priorities %}
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border rounded-4">
+                            <div class="card-body">
+                                <span class="badge bg-light text-dark border text-uppercase small">{{ item.category }}</span>
+                                <h5 class="fw-bold mt-2">{{ item.name }}</h5>
+                                <ul class="small ps-3 mb-0">
+                                    {% for b in item.benefits %}
+                                        <li>{{ b }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <h4 class="fw-bold">Workout Days</h4>
+            <div class="row g-3">
+                {% for day in result.plan.workout_days %}
+                    <div class="col-12">
+                        <div class="card border rounded-4">
+                            <div class="card-body">
+                                <h5 class="fw-bold">{{ day.focus_label }}</h5>
+                                <p class="text-muted small mb-3"><strong>Cardio:</strong> {{ day.cardio }}</p>
+                                <ul class="mb-0">
+                                    {% for ex in day.exercises %}
+                                        <li>
+                                            <strong>{{ ex.name }}</strong> —
+                                            {{ ex.description }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% elif not_found %}
+        <div class="card border-0 shadow-sm rounded-4 p-5 text-center">
+            <i class="bi bi-search display-4 text-muted mb-3"></i>
+            <h4 class="fw-bold">No plan found</h4>
+            <p class="text-muted mb-0">Try a valid plan number.</p>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

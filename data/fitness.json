@@ -1,0 +1,1155 @@
+{
+  "plans": [
+    {
+      "plan_number": 1,
+      "user_answers": {
+        "age": "23",
+        "height": "165",
+        "weight": "76",
+        "nutrition": "good",
+        "meals_per_day": "3-4",
+        "eat_out": "1-2",
+        "active": "yes",
+        "exercise_days": "3-4",
+        "goal": "lose_weight"
+      },
+      "plan": {
+        "level": "intermediate",
+        "goal": "weight_loss",
+        "goal_label": "Lose Weight",
+        "title": "Intermediate Cutting Split",
+        "description": "A 4-day plan for intermediate users who want to lose fat while keeping muscle and training intensity high.",
+        "benefits": "This plan increases weekly activity, raises calorie burn, and helps preserve lean muscle.",
+        "days_per_week": 4,
+        "ingredient_priorities": [
+          {
+            "id": 1,
+            "name": "Chicken Breast",
+            "category": "protein",
+            "calories_per_100g": 165,
+            "protein_g": 31,
+            "carbs_g": 0,
+            "fat_g": 3.6,
+            "benefits": [
+              "High protein supports muscle growth and recovery",
+              "Low fat makes it ideal for weight loss diets"
+            ],
+            "goals": [
+              "muscle_gain",
+              "weight_loss"
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Tilapia",
+            "category": "protein",
+            "calories_per_100g": 129,
+            "protein_g": 26,
+            "carbs_g": 0,
+            "fat_g": 2.7,
+            "benefits": [
+              "Lean protein source",
+              "Low calorie option for weight loss"
+            ],
+            "goals": [
+              "weight_loss",
+              "muscle_gain"
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Tuna",
+            "category": "protein",
+            "calories_per_100g": 132,
+            "protein_g": 29,
+            "carbs_g": 0,
+            "fat_g": 1,
+            "benefits": [
+              "High protein and low fat",
+              "Supports muscle recovery"
+            ],
+            "goals": [
+              "weight_loss",
+              "muscle_gain"
+            ]
+          },
+          {
+            "id": 8,
+            "name": "Broccoli",
+            "category": "vegetable",
+            "calories_per_100g": 55,
+            "protein_g": 3.7,
+            "carbs_g": 11,
+            "fat_g": 0.6,
+            "benefits": [
+              "High in vitamins and fiber",
+              "Supports overall health and digestion"
+            ],
+            "goals": [
+              "weight_loss",
+              "general_health"
+            ]
+          },
+          {
+            "id": 10,
+            "name": "Asparagus",
+            "category": "vegetable",
+            "calories_per_100g": 20,
+            "protein_g": 2.2,
+            "carbs_g": 3.9,
+            "fat_g": 0.1,
+            "benefits": [
+              "Low calorie vegetable",
+              "Supports digestion and metabolism"
+            ],
+            "goals": [
+              "weight_loss"
+            ]
+          },
+          {
+            "id": 11,
+            "name": "Green Beans",
+            "category": "vegetable",
+            "calories_per_100g": 31,
+            "protein_g": 2,
+            "carbs_g": 7,
+            "fat_g": 0.2,
+            "benefits": [
+              "Low calorie and filling",
+              "Supports weight management"
+            ],
+            "goals": [
+              "weight_loss"
+            ]
+          }
+        ],
+        "workout_days": [
+          {
+            "day": 1,
+            "focus": "push",
+            "focus_label": "Push Day",
+            "cardio": "15 min incline walk",
+            "exercises": [
+              {
+                "id": 15,
+                "name": "Overhead Tricep Extension",
+                "category": "push",
+                "target_muscles": [
+                  "triceps"
+                ],
+                "difficulty": "beginner",
+                "description": "An overhead movement that targets the triceps, especially the long head."
+              },
+              {
+                "id": 4,
+                "name": "Decline Bench Press",
+                "category": "push",
+                "target_muscles": [
+                  "chest"
+                ],
+                "difficulty": "intermediate",
+                "description": "A bench press variation that places more focus on the lower chest."
+              },
+              {
+                "id": 24,
+                "name": "Dumbbell Shoulder Press",
+                "category": "push",
+                "target_muscles": [
+                  "shoulders"
+                ],
+                "difficulty": "beginner",
+                "description": "An overhead shoulder press performed with dumbbells."
+              },
+              {
+                "id": 19,
+                "name": "Machine Tricep Extension",
+                "category": "push",
+                "target_muscles": [
+                  "triceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A machine-based isolation exercise for the triceps."
+              },
+              {
+                "id": 3,
+                "name": "Incline Bench Press",
+                "category": "push",
+                "target_muscles": [
+                  "chest"
+                ],
+                "difficulty": "intermediate",
+                "description": "A pressing exercise that emphasizes the upper chest."
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "focus": "pull",
+            "focus_label": "Pull Day",
+            "cardio": "15 min moderate row",
+            "exercises": [
+              {
+                "id": 50,
+                "name": "Single-Arm Cable Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A unilateral cable curl that trains one bicep at a time."
+              },
+              {
+                "id": 49,
+                "name": "Reverse Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps",
+                  "forearms"
+                ],
+                "difficulty": "intermediate",
+                "description": "A curl variation using an overhand grip to involve the forearms more."
+              },
+              {
+                "id": 32,
+                "name": "Chin-Up",
+                "category": "pull",
+                "target_muscles": [
+                  "back",
+                  "biceps"
+                ],
+                "difficulty": "intermediate",
+                "description": "A pull-up variation using an underhand grip to involve the biceps more."
+              },
+              {
+                "id": 43,
+                "name": "Dumbbell Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A simple bicep curl variation using dumbbells."
+              },
+              {
+                "id": 45,
+                "name": "Preacher Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A supported curl variation that isolates the biceps."
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "focus": "legs",
+            "focus_label": "Leg Day",
+            "cardio": "10 min treadmill cool-down",
+            "exercises": [
+              {
+                "id": 73,
+                "name": "Cable Kickback",
+                "category": "legs",
+                "target_muscles": [
+                  "glutes"
+                ],
+                "difficulty": "beginner",
+                "description": "A cable isolation exercise that targets the glutes one side at a time."
+              },
+              {
+                "id": 75,
+                "name": "Standing Calf Raise",
+                "category": "legs",
+                "target_muscles": [
+                  "calves"
+                ],
+                "difficulty": "beginner",
+                "description": "A calf exercise performed standing to strengthen the lower legs."
+              },
+              {
+                "id": 76,
+                "name": "Seated Calf Raise",
+                "category": "legs",
+                "target_muscles": [
+                  "calves"
+                ],
+                "difficulty": "beginner",
+                "description": "A seated calf exercise that isolates the calf muscles."
+              },
+              {
+                "id": 68,
+                "name": "Seated Leg Curl",
+                "category": "legs",
+                "target_muscles": [
+                  "hamstrings"
+                ],
+                "difficulty": "beginner",
+                "description": "A seated machine exercise that isolates the hamstrings."
+              },
+              {
+                "id": 77,
+                "name": "Donkey Calf Raise",
+                "category": "legs",
+                "target_muscles": [
+                  "calves"
+                ],
+                "difficulty": "intermediate",
+                "description": "A calf raise variation performed with the torso bent forward."
+              }
+            ]
+          },
+          {
+            "day": 4,
+            "focus": "abs",
+            "focus_label": "Core & Cardio Day",
+            "cardio": "25 min zone-2 cardio",
+            "exercises": [
+              {
+                "id": 98,
+                "name": "Dead Bug",
+                "category": "abs",
+                "target_muscles": [
+                  "core stability"
+                ],
+                "difficulty": "beginner",
+                "description": "A core stability exercise that trains control and coordination."
+              },
+              {
+                "id": 85,
+                "name": "Hanging Leg Raise",
+                "category": "abs",
+                "target_muscles": [
+                  "lower abs"
+                ],
+                "difficulty": "intermediate",
+                "description": "A hanging core exercise that emphasizes the lower abs and hip flexors."
+              },
+              {
+                "id": 90,
+                "name": "Scissor Kick",
+                "category": "abs",
+                "target_muscles": [
+                  "lower abs"
+                ],
+                "difficulty": "beginner",
+                "description": "A lower-ab exercise performed by crossing the legs in a scissor motion."
+              },
+              {
+                "id": 86,
+                "name": "Lying Leg Raise",
+                "category": "abs",
+                "target_muscles": [
+                  "lower abs"
+                ],
+                "difficulty": "beginner",
+                "description": "A floor-based exercise that targets the lower abs."
+              },
+              {
+                "id": 87,
+                "name": "Reverse Crunch",
+                "category": "abs",
+                "target_muscles": [
+                  "lower abs"
+                ],
+                "difficulty": "beginner",
+                "description": "An abdominal exercise focused on curling the hips upward to target the lower abs."
+              }
+            ]
+          }
+        ],
+        "template_key": "intermediate_weight_loss",
+        "suggested_ingredients_to_add": [
+          {
+            "name": "Greek Yogurt",
+            "category": "protein",
+            "reason": "High-protein snack that supports muscle recovery and helps with fullness."
+          },
+          {
+            "name": "Oats",
+            "category": "carbohydrate",
+            "reason": "A slow-digesting carb that supports energy and satiety."
+          },
+          {
+            "name": "Sweet Potato",
+            "category": "carbohydrate",
+            "reason": "A quality carb source that supports training energy and general health."
+          },
+          {
+            "name": "Spinach",
+            "category": "vegetable",
+            "reason": "A nutrient-dense vegetable that fits almost any health-focused meal plan."
+          },
+          {
+            "name": "Avocado",
+            "category": "healthy_fat",
+            "reason": "Adds healthy fats that support recovery and overall nutrition."
+          },
+          {
+            "name": "Almonds",
+            "category": "healthy_fat",
+            "reason": "A practical snack source of healthy fats and extra calories when needed."
+          }
+        ]
+      }
+    },
+    {
+      "plan_number": 2,
+      "user_answers": {
+        "age": "25",
+        "height": "180",
+        "weight": "90",
+        "nutrition": "good",
+        "meals_per_day": "1-2",
+        "eat_out": "0",
+        "active": "yes",
+        "exercise_days": "5+",
+        "goal": "build_muscle"
+      },
+      "plan": {
+        "level": "advanced",
+        "goal": "muscle_gain",
+        "goal_label": "Build Muscle",
+        "title": "Advanced Hypertrophy Program",
+        "description": "A 5-day advanced split built for users chasing higher muscle-building volume and progression.",
+        "benefits": "This plan supports muscle growth through more weekly volume, specialization, and structured recovery.",
+        "days_per_week": 5,
+        "ingredient_priorities": [
+          {
+            "id": 1,
+            "name": "Chicken Breast",
+            "category": "protein",
+            "calories_per_100g": 165,
+            "protein_g": 31,
+            "carbs_g": 0,
+            "fat_g": 3.6,
+            "benefits": [
+              "High protein supports muscle growth and recovery",
+              "Low fat makes it ideal for weight loss diets"
+            ],
+            "goals": [
+              "muscle_gain",
+              "weight_loss"
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Beef",
+            "category": "protein",
+            "calories_per_100g": 250,
+            "protein_g": 26,
+            "carbs_g": 0,
+            "fat_g": 15,
+            "benefits": [
+              "Rich in iron and supports strength",
+              "High protein content helps muscle growth"
+            ],
+            "goals": [
+              "muscle_gain"
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Tilapia",
+            "category": "protein",
+            "calories_per_100g": 129,
+            "protein_g": 26,
+            "carbs_g": 0,
+            "fat_g": 2.7,
+            "benefits": [
+              "Lean protein source",
+              "Low calorie option for weight loss"
+            ],
+            "goals": [
+              "weight_loss",
+              "muscle_gain"
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Tuna",
+            "category": "protein",
+            "calories_per_100g": 132,
+            "protein_g": 29,
+            "carbs_g": 0,
+            "fat_g": 1,
+            "benefits": [
+              "High protein and low fat",
+              "Supports muscle recovery"
+            ],
+            "goals": [
+              "weight_loss",
+              "muscle_gain"
+            ]
+          },
+          {
+            "id": 5,
+            "name": "Quinoa",
+            "category": "carbohydrate",
+            "calories_per_100g": 120,
+            "protein_g": 4,
+            "carbs_g": 21,
+            "fat_g": 2,
+            "benefits": [
+              "Contains complete protein",
+              "Provides sustained energy"
+            ],
+            "goals": [
+              "muscle_gain",
+              "weight_loss"
+            ]
+          },
+          {
+            "id": 6,
+            "name": "White Rice",
+            "category": "carbohydrate",
+            "calories_per_100g": 130,
+            "protein_g": 2.7,
+            "carbs_g": 28,
+            "fat_g": 0.3,
+            "benefits": [
+              "Quick source of energy",
+              "Easy to digest"
+            ],
+            "goals": [
+              "muscle_gain"
+            ]
+          }
+        ],
+        "workout_days": [
+          {
+            "day": 1,
+            "focus": "push",
+            "focus_label": "Push Day",
+            "cardio": "5 min warm-up",
+            "exercises": [
+              {
+                "id": 7,
+                "name": "Machine Chest Press",
+                "category": "push",
+                "target_muscles": [
+                  "chest"
+                ],
+                "difficulty": "beginner",
+                "description": "A machine-based pressing exercise that isolates the chest with guided movement."
+              },
+              {
+                "id": 13,
+                "name": "Close Grip Push-Up",
+                "category": "push",
+                "target_muscles": [
+                  "chest",
+                  "triceps"
+                ],
+                "difficulty": "intermediate",
+                "description": "A push-up variation with a narrow grip that increases triceps involvement."
+              },
+              {
+                "id": 17,
+                "name": "Close Grip Bench Press",
+                "category": "push",
+                "target_muscles": [
+                  "triceps"
+                ],
+                "difficulty": "intermediate",
+                "description": "A bench press variation with a narrow grip to emphasize the triceps."
+              },
+              {
+                "id": 16,
+                "name": "Skull Crusher",
+                "category": "push",
+                "target_muscles": [
+                  "triceps"
+                ],
+                "difficulty": "intermediate",
+                "description": "A lying triceps extension exercise commonly performed with an EZ bar or dumbbells."
+              },
+              {
+                "id": 26,
+                "name": "Machine Shoulder Press",
+                "category": "push",
+                "target_muscles": [
+                  "shoulders"
+                ],
+                "difficulty": "beginner",
+                "description": "A machine-guided overhead pressing exercise for the shoulders."
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "focus": "pull",
+            "focus_label": "Pull Day",
+            "cardio": "5 min warm-up",
+            "exercises": [
+              {
+                "id": 50,
+                "name": "Single-Arm Cable Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A unilateral cable curl that trains one bicep at a time."
+              },
+              {
+                "id": 49,
+                "name": "Reverse Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps",
+                  "forearms"
+                ],
+                "difficulty": "intermediate",
+                "description": "A curl variation using an overhand grip to involve the forearms more."
+              },
+              {
+                "id": 46,
+                "name": "Cable Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A curl performed on a cable machine for constant tension."
+              },
+              {
+                "id": 48,
+                "name": "Incline Dumbbell Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "intermediate",
+                "description": "A dumbbell curl variation performed on an incline bench for greater stretch."
+              },
+              {
+                "id": 47,
+                "name": "Concentration Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A seated single-arm curl that isolates the biceps."
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "focus": "legs",
+            "focus_label": "Leg Day",
+            "cardio": "5 min warm-up",
+            "exercises": [
+              {
+                "id": 60,
+                "name": "Bulgarian Split Squat",
+                "category": "legs",
+                "target_muscles": [
+                  "quads"
+                ],
+                "difficulty": "intermediate",
+                "description": "A single-leg squat variation that develops balance, strength, and stability."
+              },
+              {
+                "id": 79,
+                "name": "Calf Raise on Stairs",
+                "category": "legs",
+                "target_muscles": [
+                  "calves"
+                ],
+                "difficulty": "beginner",
+                "description": "A calf raise variation performed on a step for a deeper stretch."
+              },
+              {
+                "id": 56,
+                "name": "Barbell Back Squat",
+                "category": "legs",
+                "target_muscles": [
+                  "quads"
+                ],
+                "difficulty": "intermediate",
+                "description": "A foundational lower-body compound lift focused on the quads and glutes."
+              },
+              {
+                "id": 70,
+                "name": "Hip Thrust",
+                "category": "legs",
+                "target_muscles": [
+                  "glutes"
+                ],
+                "difficulty": "beginner",
+                "description": "A glute-focused lower-body exercise performed with the upper back supported."
+              },
+              {
+                "id": 66,
+                "name": "Good Morning",
+                "category": "legs",
+                "target_muscles": [
+                  "hamstrings"
+                ],
+                "difficulty": "advanced",
+                "description": "A hip hinge exercise that targets the hamstrings and lower back."
+              }
+            ]
+          },
+          {
+            "day": 4,
+            "focus": "abs",
+            "focus_label": "Core Day",
+            "cardio": "10 min easy cardio",
+            "exercises": [
+              {
+                "id": 100,
+                "name": "Mountain Climber",
+                "category": "abs",
+                "target_muscles": [
+                  "core stability"
+                ],
+                "difficulty": "beginner",
+                "description": "A dynamic bodyweight exercise that challenges the core while elevating heart rate."
+              },
+              {
+                "id": 81,
+                "name": "Cable Crunch",
+                "category": "abs",
+                "target_muscles": [
+                  "upper abs"
+                ],
+                "difficulty": "beginner",
+                "description": "A weighted crunch variation performed using a cable machine."
+              },
+              {
+                "id": 93,
+                "name": "Side Crunch",
+                "category": "abs",
+                "target_muscles": [
+                  "obliques"
+                ],
+                "difficulty": "beginner",
+                "description": "An abdominal crunch variation that focuses on the obliques."
+              },
+              {
+                "id": 96,
+                "name": "Plank",
+                "category": "abs",
+                "target_muscles": [
+                  "core stability"
+                ],
+                "difficulty": "beginner",
+                "description": "A foundational isometric core exercise for stability and endurance."
+              },
+              {
+                "id": 92,
+                "name": "Cable Woodchopper",
+                "category": "abs",
+                "target_muscles": [
+                  "obliques"
+                ],
+                "difficulty": "intermediate",
+                "description": "A rotational cable exercise that develops the obliques and core."
+              }
+            ]
+          },
+          {
+            "day": 5,
+            "focus": "pull",
+            "focus_label": "Arm Focus Day",
+            "cardio": "5 min warm-up",
+            "exercises": [
+              {
+                "id": 46,
+                "name": "Cable Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A curl performed on a cable machine for constant tension."
+              },
+              {
+                "id": 43,
+                "name": "Dumbbell Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A simple bicep curl variation using dumbbells."
+              },
+              {
+                "id": 32,
+                "name": "Chin-Up",
+                "category": "pull",
+                "target_muscles": [
+                  "back",
+                  "biceps"
+                ],
+                "difficulty": "intermediate",
+                "description": "A pull-up variation using an underhand grip to involve the biceps more."
+              },
+              {
+                "id": 45,
+                "name": "Preacher Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A supported curl variation that isolates the biceps."
+              },
+              {
+                "id": 47,
+                "name": "Concentration Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A seated single-arm curl that isolates the biceps."
+              }
+            ]
+          }
+        ],
+        "template_key": "advanced_muscle_gain",
+        "suggested_ingredients_to_add": [
+          {
+            "name": "Greek Yogurt",
+            "category": "protein",
+            "reason": "High-protein snack that supports muscle recovery and helps with fullness."
+          },
+          {
+            "name": "Oats",
+            "category": "carbohydrate",
+            "reason": "A slow-digesting carb that supports energy and satiety."
+          },
+          {
+            "name": "Sweet Potato",
+            "category": "carbohydrate",
+            "reason": "A quality carb source that supports training energy and general health."
+          },
+          {
+            "name": "Spinach",
+            "category": "vegetable",
+            "reason": "A nutrient-dense vegetable that fits almost any health-focused meal plan."
+          },
+          {
+            "name": "Avocado",
+            "category": "healthy_fat",
+            "reason": "Adds healthy fats that support recovery and overall nutrition."
+          },
+          {
+            "name": "Almonds",
+            "category": "healthy_fat",
+            "reason": "A practical snack source of healthy fats and extra calories when needed."
+          }
+        ]
+      }
+    },
+    {
+      "plan_number": 3,
+      "user_answers": {
+        "age": "23",
+        "height": "178",
+        "weight": "88",
+        "nutrition": "poor",
+        "meals_per_day": "1-2",
+        "eat_out": "1-2",
+        "active": "no",
+        "exercise_days": "1-2",
+        "goal": "lose_weight"
+      },
+      "plan": {
+        "level": "beginner",
+        "goal": "weight_loss",
+        "goal_label": "Lose Weight",
+        "title": "Beginner Fat-Loss Starter",
+        "description": "A 3-day push, pull, and legs routine built for beginners who want to lose fat while building basic strength and consistency.",
+        "benefits": "This plan helps increase calorie burn, improve workout consistency, and preserve muscle while losing weight.",
+        "days_per_week": 3,
+        "ingredient_priorities": [
+          {
+            "id": 1,
+            "name": "Chicken Breast",
+            "category": "protein",
+            "calories_per_100g": 165,
+            "protein_g": 31,
+            "carbs_g": 0,
+            "fat_g": 3.6,
+            "benefits": [
+              "High protein supports muscle growth and recovery",
+              "Low fat makes it ideal for weight loss diets"
+            ],
+            "goals": [
+              "muscle_gain",
+              "weight_loss"
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Tilapia",
+            "category": "protein",
+            "calories_per_100g": 129,
+            "protein_g": 26,
+            "carbs_g": 0,
+            "fat_g": 2.7,
+            "benefits": [
+              "Lean protein source",
+              "Low calorie option for weight loss"
+            ],
+            "goals": [
+              "weight_loss",
+              "muscle_gain"
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Tuna",
+            "category": "protein",
+            "calories_per_100g": 132,
+            "protein_g": 29,
+            "carbs_g": 0,
+            "fat_g": 1,
+            "benefits": [
+              "High protein and low fat",
+              "Supports muscle recovery"
+            ],
+            "goals": [
+              "weight_loss",
+              "muscle_gain"
+            ]
+          },
+          {
+            "id": 8,
+            "name": "Broccoli",
+            "category": "vegetable",
+            "calories_per_100g": 55,
+            "protein_g": 3.7,
+            "carbs_g": 11,
+            "fat_g": 0.6,
+            "benefits": [
+              "High in vitamins and fiber",
+              "Supports overall health and digestion"
+            ],
+            "goals": [
+              "weight_loss",
+              "general_health"
+            ]
+          },
+          {
+            "id": 10,
+            "name": "Asparagus",
+            "category": "vegetable",
+            "calories_per_100g": 20,
+            "protein_g": 2.2,
+            "carbs_g": 3.9,
+            "fat_g": 0.1,
+            "benefits": [
+              "Low calorie vegetable",
+              "Supports digestion and metabolism"
+            ],
+            "goals": [
+              "weight_loss"
+            ]
+          },
+          {
+            "id": 11,
+            "name": "Green Beans",
+            "category": "vegetable",
+            "calories_per_100g": 31,
+            "protein_g": 2,
+            "carbs_g": 7,
+            "fat_g": 0.2,
+            "benefits": [
+              "Low calorie and filling",
+              "Supports weight management"
+            ],
+            "goals": [
+              "weight_loss"
+            ]
+          }
+        ],
+        "workout_days": [
+          {
+            "day": 1,
+            "focus": "push",
+            "focus_label": "Push Day",
+            "cardio": "15 min incline walk after lifting",
+            "exercises": [
+              {
+                "id": 7,
+                "name": "Machine Chest Press",
+                "category": "push",
+                "target_muscles": [
+                  "chest"
+                ],
+                "difficulty": "beginner",
+                "description": "A machine-based pressing exercise that isolates the chest with guided movement."
+              },
+              {
+                "id": 12,
+                "name": "Incline Push-Up",
+                "category": "push",
+                "target_muscles": [
+                  "chest"
+                ],
+                "difficulty": "beginner",
+                "description": "A beginner-friendly push-up variation performed with hands elevated."
+              },
+              {
+                "id": 9,
+                "name": "Smith Machine Bench Press",
+                "category": "push",
+                "target_muscles": [
+                  "chest"
+                ],
+                "difficulty": "beginner",
+                "description": "A bench press variation using a Smith machine for more stability."
+              },
+              {
+                "id": 10,
+                "name": "Wide Push-Up",
+                "category": "push",
+                "target_muscles": [
+                  "chest"
+                ],
+                "difficulty": "beginner",
+                "description": "A push-up variation with a wider hand position to emphasize the chest."
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "focus": "pull",
+            "focus_label": "Pull Day",
+            "cardio": "15 min bike or elliptical",
+            "exercises": [
+              {
+                "id": 47,
+                "name": "Concentration Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A seated single-arm curl that isolates the biceps."
+              },
+              {
+                "id": 44,
+                "name": "Hammer Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A curl variation using a neutral grip to target the biceps and forearms."
+              },
+              {
+                "id": 45,
+                "name": "Preacher Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A supported curl variation that isolates the biceps."
+              },
+              {
+                "id": 46,
+                "name": "Cable Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A curl performed on a cable machine for constant tension."
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "focus": "legs",
+            "focus_label": "Leg Day",
+            "cardio": "10 min incline treadmill cool-down",
+            "exercises": [
+              {
+                "id": 61,
+                "name": "Walking Lunge",
+                "category": "legs",
+                "target_muscles": [
+                  "quads"
+                ],
+                "difficulty": "beginner",
+                "description": "A dynamic lower-body movement that targets the quads and glutes."
+              },
+              {
+                "id": 62,
+                "name": "Step-Up",
+                "category": "legs",
+                "target_muscles": [
+                  "quads"
+                ],
+                "difficulty": "beginner",
+                "description": "A functional lower-body exercise performed by stepping onto an elevated surface."
+              },
+              {
+                "id": 67,
+                "name": "Lying Leg Curl",
+                "category": "legs",
+                "target_muscles": [
+                  "hamstrings"
+                ],
+                "difficulty": "beginner",
+                "description": "A machine isolation exercise for the hamstrings."
+              },
+              {
+                "id": 71,
+                "name": "Glute Bridge",
+                "category": "legs",
+                "target_muscles": [
+                  "glutes"
+                ],
+                "difficulty": "beginner",
+                "description": "A beginner-friendly glute exercise performed from the floor."
+              }
+            ]
+          }
+        ],
+        "template_key": "beginner_weight_loss",
+        "suggested_ingredients_to_add": [
+          {
+            "name": "Greek Yogurt",
+            "category": "protein",
+            "reason": "High-protein snack that supports muscle recovery and helps with fullness."
+          },
+          {
+            "name": "Oats",
+            "category": "carbohydrate",
+            "reason": "A slow-digesting carb that supports energy and satiety."
+          },
+          {
+            "name": "Sweet Potato",
+            "category": "carbohydrate",
+            "reason": "A quality carb source that supports training energy and general health."
+          },
+          {
+            "name": "Spinach",
+            "category": "vegetable",
+            "reason": "A nutrient-dense vegetable that fits almost any health-focused meal plan."
+          },
+          {
+            "name": "Avocado",
+            "category": "healthy_fat",
+            "reason": "Adds healthy fats that support recovery and overall nutrition."
+          },
+          {
+            "name": "Almonds",
+            "category": "healthy_fat",
+            "reason": "A practical snack source of healthy fats and extra calories when needed."
+          }
+        ]
+      }
+    }
+  ]
+}

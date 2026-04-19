@@ -1,144 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Dashboard Assessment</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f7fb;
-            margin: 0;
-            padding: 0;
-        }
+{% extends "base.html" %}
 
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 14px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        }
+{% block title %}Fitness Dashboard Assessment · Fitnice{% endblock %}
 
-        h1, h2 {
-            color: #222;
-        }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        label {
-            display: block;
-            margin-top: 12px;
-            margin-bottom: 6px;
-            font-weight: bold;
-        }
-
-        input, select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
-
-        button {
-            margin-top: 20px;
-            background: #222;
-            color: white;
-            border: none;
-            padding: 12px 18px;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #444;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Fitness Assessment</h1>
-        <p>Answer these questions so we can create a personalized fitness and nutrition plan for you.</p>
-
-        <form method="POST">
-            {% csrf_token %}
-
-            <div class="section">
-                <h2>Personal Information</h2>
-
-                <label for="age">Age</label>
-                <input type="number" id="age" name="age" required>
-
-                <label for="height">Height (cm)</label>
-                <input type="number" id="height" name="height" required>
-
-                <label for="weight">Weight (kg)</label>
-                <input type="number" id="weight" name="weight" required>
-            </div>
-
-            <div class="section">
-                <h2>Nutrition Assessment</h2>
-
-                <label for="nutrition">How would you rate your nutrition?</label>
-                <select id="nutrition" name="nutrition" required>
-                    <option value="">Select</option>
-                    <option value="good">Good</option>
-                    <option value="medium">Medium</option>
-                    <option value="poor">Poor</option>
-                </select>
-
-                <label for="meals_per_day">How many meals do you eat per day?</label>
-                <select id="meals_per_day" name="meals_per_day" required>
-                    <option value="">Select</option>
-                    <option value="1-2">1–2</option>
-                    <option value="3-4">3–4</option>
-                    <option value="5+">5+</option>
-                </select>
-
-                <label for="eat_out">How often do you eat out each week?</label>
-                <select id="eat_out" name="eat_out" required>
-                    <option value="">Select</option>
-                    <option value="0">0</option>
-                    <option value="1-2">1–2</option>
-                    <option value="3-5">3–5</option>
-                    <option value="6+">6+</option>
-                </select>
-            </div>
-
-            <div class="section">
-                <h2>Fitness Assessment</h2>
-
-                <label for="active">Are you an active person?</label>
-                <select id="active" name="active" required>
-                    <option value="">Select</option>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select>
-
-                <label for="exercise_days">How many days do you exercise per week?</label>
-                <select id="exercise_days" name="exercise_days" required>
-                    <option value="">Select</option>
-                    <option value="0">0</option>
-                    <option value="1-2">1–2</option>
-                    <option value="3-4">3–4</option>
-                    <option value="5+">5+</option>
-                </select>
-
-                <label for="goal">What is your main fitness goal?</label>
-                <select id="goal" name="goal" required>
-                    <option value="">Select</option>
-                    <option value="lose_weight">Lose Weight</option>
-                    <option value="build_muscle">Build Muscle</option>
-                    <option value="maintain_health">Maintain Health</option>
-                    <option value="improve_endurance">Improve Endurance</option>
-                </select>
-            </div>
-
-            <button type="submit">Generate My Plan</button>
-        </form>
+{% block content %}
+<div class="w-100 py-4">
+    <div class="text-center mb-5">
+        <h1 class="fw-bold mb-2">Fitness Assessment</h1>
+        <p class="text-muted mb-0">
+            Answer a few questions so we can build a personalized fitness and nutrition plan for you.
+        </p>
     </div>
-</body>
-</html>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-sm rounded-4">
+                <div class="card-body p-4 p-md-5">
+                    <form method="POST" class="row g-4">
+                        {% csrf_token %}
+
+                        <div class="col-12">
+                            <h4 class="fw-bold mb-3">Personal Information</h4>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="age" class="form-label fw-semibold">Age</label>
+                            <input type="number" class="form-control form-control-lg rounded-3" id="age" name="age" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="height" class="form-label fw-semibold">Height (cm)</label>
+                            <input type="number" class="form-control form-control-lg rounded-3" id="height" name="height" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="weight" class="form-label fw-semibold">Weight (kg)</label>
+                            <input type="number" class="form-control form-control-lg rounded-3" id="weight" name="weight" required>
+                        </div>
+
+                        <div class="col-12 pt-2">
+                            <h4 class="fw-bold mb-3">Nutrition Assessment</h4>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="nutrition" class="form-label fw-semibold">How would you rate your nutrition?</label>
+                            <select id="nutrition" name="nutrition" class="form-select form-select-lg rounded-3" required>
+                                <option value="">Select</option>
+                                <option value="good">Good</option>
+                                <option value="medium">Medium</option>
+                                <option value="poor">Poor</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="meals_per_day" class="form-label fw-semibold">Meals per day</label>
+                            <select id="meals_per_day" name="meals_per_day" class="form-select form-select-lg rounded-3" required>
+                                <option value="">Select</option>
+                                <option value="1-2">1–2</option>
+                                <option value="3-4">3–4</option>
+                                <option value="5+">5+</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="eat_out" class="form-label fw-semibold">How often do you eat out each week?</label>
+                            <select id="eat_out" name="eat_out" class="form-select form-select-lg rounded-3" required>
+                                <option value="">Select</option>
+                                <option value="0">0</option>
+                                <option value="1-2">1–2</option>
+                                <option value="3-5">3–5</option>
+                                <option value="6+">6+</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 pt-2">
+                            <h4 class="fw-bold mb-3">Fitness Assessment</h4>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="active" class="form-label fw-semibold">Are you an active person?</label>
+                            <select id="active" name="active" class="form-select form-select-lg rounded-3" required>
+                                <option value="">Select</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="exercise_days" class="form-label fw-semibold">Exercise days per week</label>
+                            <select id="exercise_days" name="exercise_days" class="form-select form-select-lg rounded-3" required>
+                                <option value="">Select</option>
+                                <option value="0">0</option>
+                                <option value="1-2">1–2</option>
+                                <option value="3-4">3–4</option>
+                                <option value="5+">5+</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="goal" class="form-label fw-semibold">Main fitness goal</label>
+                            <select id="goal" name="goal" class="form-select form-select-lg rounded-3" required>
+                                <option value="">Select</option>
+                                <option value="lose_weight">Lose Weight</option>
+                                <option value="build_muscle">Build Muscle</option>
+                                <option value="maintain_health">Maintain Health</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="bg-light border rounded-4 p-4">
+                                <h5 class="fw-bold mb-2">What happens next?</h5>
+                                <p class="text-muted mb-0">
+                                    Based on your responses, Fitnice can recommend exercises, ingredients, and fitness plans that better match your needs and goals.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 d-flex justify-content-center pt-2">
+                            <button type="submit" class="btn btn-dark btn-lg px-5 rounded-pill shadow-sm">
+                                Generate My Plan
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

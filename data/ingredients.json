@@ -298,5 +298,411 @@
             "general_health": "Supports brain function and overall nutrition."
         },
         "goals": ["muscle_gain", "weight_loss", "general_health"]
+    },
+    {
+        "id": 22,
+        "name": "Turkey Breast",
+        "category": "protein",
+        "calories_per_100g": 135,
+        "protein_g": 30,
+        "carbs_g": 0,
+        "fat_g": 1,
+        "benefits": [
+            "Lean protein source",
+            "Supports muscle growth and recovery"
+        ],
+        "goals": ["muscle_gain", "weight_loss"]
+    },
+    {
+        "id": 23,
+        "name": "Greek Yogurt",
+        "category": "protein",
+        "calories_per_100g": 59,
+        "protein_g": 10,
+        "carbs_g": 3.6,
+        "fat_g": 0.4,
+        "benefits": [
+            "High protein dairy option",
+            "Supports gut health"
+        ],
+        "goals": ["muscle_gain", "weight_loss"]
+    },
+    {
+        "id": 24,
+        "name": "Milk",
+        "category": "protein",
+        "calories_per_100g": 42,
+        "protein_g": 3.4,
+        "carbs_g": 5,
+        "fat_g": 1,
+        "benefits": [
+            "Provides calcium and protein",
+            "Supports recovery"
+        ],
+        "goals": ["muscle_gain", "general_health"]
+    },
+    {
+        "id": 25,
+        "name": "Oats",
+        "category": "carbohydrate",
+        "calories_per_100g": 389,
+        "protein_g": 17,
+        "carbs_g": 66,
+        "fat_g": 7,
+        "benefits": [
+            "High fiber keeps you full",
+            "Provides slow-release energy"
+        ],
+        "goals": ["weight_loss", "muscle_gain"]
+    },
+    {
+        "id": 26,
+        "name": "Sweet Potato",
+        "category": "carbohydrate",
+        "calories_per_100g": 86,
+        "protein_g": 1.6,
+        "carbs_g": 20,
+        "fat_g": 0.1,
+        "benefits": [
+            "Rich in vitamins",
+            "Sustained energy source"
+        ],
+        "goals": ["general_health", "muscle_gain"]
+    },
+    {
+        "id": 27,
+        "name": "Brown Rice",
+        "category": "carbohydrate",
+        "calories_per_100g": 123,
+        "protein_g": 2.7,
+        "carbs_g": 25,
+        "fat_g": 1,
+        "benefits": [
+            "Whole grain with fiber",
+            "Supports digestion"
+        ],
+        "goals": ["general_health", "weight_loss"]
+    },
+    {
+        "id": 28,
+        "name": "Pasta",
+        "category": "carbohydrate",
+        "calories_per_100g": 131,
+        "protein_g": 5,
+        "carbs_g": 25,
+        "fat_g": 1,
+        "benefits": [
+            "High energy food",
+            "Good for endurance"
+        ],
+        "goals": ["energy", "muscle_gain"]
+    },
+    {
+        "id": 29,
+        "name": "Potato",
+        "category": "carbohydrate",
+        "calories_per_100g": 77,
+        "protein_g": 2,
+        "carbs_g": 17,
+        "fat_g": 0.1,
+        "benefits": [
+            "Good energy source",
+            "Contains potassium"
+        ],
+        "goals": ["energy", "muscle_gain"]
+    },
+    {
+        "id": 30,
+        "name": "Spinach",
+        "category": "vegetable",
+        "calories_per_100g": 23,
+        "protein_g": 2.9,
+        "carbs_g": 3.6,
+        "fat_g": 0.4,
+        "benefits": [
+            "Rich in iron",
+            "Supports overall health"
+        ],
+        "goals": ["general_health"]
+    },
+    {
+        "id": 31,
+        "name": "Carrots",
+        "category": "vegetable",
+        "calories_per_100g": 41,
+        "protein_g": 0.9,
+        "carbs_g": 10,
+        "fat_g": 0.2,
+        "benefits": [
+            "Rich in vitamin A",
+            "Supports vision health"
+        ],
+        "goals": ["general_health"]
+    },
+    {
+        "id": 32,
+        "name": "Bell Peppers",
+        "category": "vegetable",
+        "calories_per_100g": 31,
+        "protein_g": 1,
+        "carbs_g": 6,
+        "fat_g": 0.3,
+        "benefits": [
+            "High in vitamin C",
+            "Supports immune system"
+        ],
+        "goals": ["general_health"]
+    },
+    {
+        "id": 33,
+        "name": "Onions",
+        "category": "vegetable",
+        "calories_per_100g": 40,
+        "protein_g": 1.1,
+        "carbs_g": 9,
+        "fat_g": 0.1,
+        "benefits": [
+            "Contains antioxidants",
+            "Supports heart health"
+        ],
+        "goals": ["general_health"]
+    },
+    {
+        "id": 34,
+        "name": "Garlic",
+        "category": "vegetable",
+        "calories_per_100g": 149,
+        "protein_g": 6.4,
+        "carbs_g": 33,
+        "fat_g": 0.5,
+        "benefits": [
+            "Supports immune system",
+            "Has anti-inflammatory properties"
+        ],
+        "goals": ["general_health"]
+    },
+    {
+        "id": 35,
+        "name": "Strawberries",
+        "category": "fruit",
+        "calories_per_100g": 32,
+        "protein_g": 0.7,
+        "carbs_g": 7.7,
+        "fat_g": 0.3,
+        "benefits": [
+            "Low calorie fruit",
+            "Rich in antioxidants"
+        ],
+        "goals": ["weight_loss", "general_health"]
+    },
+    {
+        "id": 36,
+        "name": "Blueberries",
+        "category": "fruit",
+        "calories_per_100g": 57,
+        "protein_g": 0.7,
+        "carbs_g": 14,
+        "fat_g": 0.3,
+        "benefits": [
+            "Supports brain health",
+            "Rich in antioxidants"
+        ],
+        "goals": ["general_health"]
+    },
+    {
+        "id": 37,
+        "name": "Orange",
+        "category": "fruit",
+        "calories_per_100g": 47,
+        "protein_g": 0.9,
+        "carbs_g": 12,
+        "fat_g": 0.1,
+        "benefits": [
+            "High in vitamin C",
+            "Supports immune system"
+        ],
+        "goals": ["general_health"]
+    },
+    {
+        "id": 38,
+        "name": "Avocado",
+        "category": "fat",
+        "calories_per_100g": 160,
+        "protein_g": 2,
+        "carbs_g": 9,
+        "fat_g": 15,
+        "benefits": [
+            "Healthy fats for heart health",
+            "Supports hormone function"
+        ],
+        "goals": ["general_health", "muscle_gain"]
+    },
+    {
+        "id": 39,
+        "name": "Almonds",
+        "category": "fat",
+        "calories_per_100g": 579,
+        "protein_g": 21,
+        "carbs_g": 22,
+        "fat_g": 50,
+        "benefits": [
+            "Healthy fats and protein",
+            "Supports energy levels"
+        ],
+        "goals": ["energy", "muscle_gain"]
+    },
+    {
+        "id": 40,
+        "name": "Peanut Butter",
+        "category": "fat",
+        "calories_per_100g": 588,
+        "protein_g": 25,
+        "carbs_g": 20,
+        "fat_g": 50,
+        "benefits": [
+            "High calorie for bulking",
+            "Provides healthy fats"
+        ],
+        "goals": ["muscle_gain"]
+    },
+    {
+        "id": 41,
+        "name": "Olive Oil",
+        "category": "fat",
+        "calories_per_100g": 884,
+        "protein_g": 0,
+        "carbs_g": 0,
+        "fat_g": 100,
+        "benefits": [
+            "Healthy fats",
+            "Supports heart health"
+        ],
+        "goals": ["general_health"]
+    },
+    {
+        "id": 42,
+        "name": "Cheese",
+        "category": "protein",
+        "calories_per_100g": 402,
+        "protein_g": 25,
+        "carbs_g": 1.3,
+        "fat_g": 33,
+        "benefits": [
+            "High protein dairy",
+            "Provides calcium"
+        ],
+        "goals": ["muscle_gain"]
+    },
+    {
+        "id": 43,
+        "name": "Shrimp",
+        "category": "protein",
+        "calories_per_100g": 99,
+        "protein_g": 24,
+        "carbs_g": 0,
+        "fat_g": 0.3,
+        "benefits": [
+            "Lean seafood protein",
+            "Low calorie option"
+        ],
+        "goals": ["weight_loss", "muscle_gain"]
+    },
+    {
+        "id": 44,
+        "name": "Pork",
+        "category": "protein",
+        "calories_per_100g": 242,
+        "protein_g": 27,
+        "carbs_g": 0,
+        "fat_g": 14,
+        "benefits": [
+            "High protein",
+            "Supports muscle growth"
+        ],
+        "goals": ["muscle_gain"]
+    },
+    {
+        "id": 45,
+        "name": "Lentils",
+        "category": "carbohydrate",
+        "calories_per_100g": 116,
+        "protein_g": 9,
+        "carbs_g": 20,
+        "fat_g": 0.4,
+        "benefits": [
+            "High fiber and protein",
+            "Supports digestion"
+        ],
+        "goals": ["weight_loss", "general_health"]
+    },
+    {
+        "id": 46,
+        "name": "Chickpeas",
+        "category": "carbohydrate",
+        "calories_per_100g": 164,
+        "protein_g": 9,
+        "carbs_g": 27,
+        "fat_g": 2.6,
+        "benefits": [
+            "Plant-based protein",
+            "Supports energy"
+        ],
+        "goals": ["muscle_gain", "general_health"]
+    },
+    {
+        "id": 47,
+        "name": "Zucchini",
+        "category": "vegetable",
+        "calories_per_100g": 17,
+        "protein_g": 1.2,
+        "carbs_g": 3.1,
+        "fat_g": 0.3,
+        "benefits": [
+            "Low calorie vegetable",
+            "Supports hydration"
+        ],
+        "goals": ["weight_loss"]
+    },
+    {
+        "id": 48,
+        "name": "Cabbage",
+        "category": "vegetable",
+        "calories_per_100g": 25,
+        "protein_g": 1.3,
+        "carbs_g": 6,
+        "fat_g": 0.1,
+        "benefits": [
+            "High fiber",
+            "Supports digestion"
+        ],
+        "goals": ["weight_loss", "general_health"]
+    },
+    {
+        "id": 49,
+        "name": "Pineapple",
+        "category": "fruit",
+        "calories_per_100g": 50,
+        "protein_g": 0.5,
+        "carbs_g": 13,
+        "fat_g": 0.1,
+        "benefits": [
+            "Contains digestive enzymes",
+            "Supports recovery"
+        ],
+        "goals": ["general_health"]
+    },
+    {
+        "id": 50,
+        "name": "Mango",
+        "category": "fruit",
+        "calories_per_100g": 60,
+        "protein_g": 0.8,
+        "carbs_g": 15,
+        "fat_g": 0.4,
+        "benefits": [
+            "Rich in vitamins",
+            "Provides quick energy"
+        ],
+        "goals": ["energy", "general_health"]
     }
 ]

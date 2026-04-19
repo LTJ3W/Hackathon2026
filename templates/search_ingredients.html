@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+
+{% block title %}Search Ingredients · Fitnice{% endblock %}
+
+{% block content %}
+<div class="w-100">
+    <div class="mb-4">
+        <h1 class="fw-bold mb-1">Search Ingredients</h1>
+        <p class="text-muted mb-0">
+            Browse {{ total }} ingredients. Find nutrition info, benefits, and the goals each one supports.
+        </p>
+    </div>
+
+    <form method="get" class="card border-0 shadow-sm rounded-4 p-3 mb-4" data-testid="search-form">
+        <div class="row g-2 align-items-end">
+            <div class="col-md-6">
+                <label for="q" class="form-label small text-muted mb-1">Search by name or benefit</label>
+                <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="q"
+                    name="q"
+                    value="{{ q }}"
+                    placeholder="e.g. chicken, quinoa, hydration"
+                    data-testid="search-input"
+                >
+            </div>
+
+            <div class="col-md-3">
+                <label for="category" class="form-label small text-muted mb-1">Category</label>
+                <select class="form-select form-select-lg" id="category" name="category" data-testid="category-select">
+                    <option value="">All</option>
+                    {% for c in categories %}
+                        <option value="{{ c }}" {% if c == selected_category %}selected{% endif %}>
+                            {{ c|title }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <label for="goal" class="form-label small text-muted mb-1">Goal</label>
+                <select class="form-select form-select-lg" id="goal" name="goal" data-testid="goal-select">
+                    <option value="">All</option>
+                    {% for g in goals %}
+                        <option value="{{ g }}" {% if g == selected_goal %}selected{% endif %}>
+                            {{ g|cut:"_"|title }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="col-12 d-flex gap-2 mt-3">
+                <button type="submit" class="btn btn-dark px-4 rounded-pill" data-testid="search-submit">
+                    <i class="bi bi-search me-1"></i> Search
+                </button>
+                <a href="{% url 'search_ingredients' %}" class="btn btn-outline-secondary rounded-pill" data-testid="clear-filters">
+                    Clear
+                </a>
+            </div>
+        </div>
+    </form>
+
+    <p class="text-muted small mb-3" data-testid="results-count">
+        Showing {{ results|length }} result{{ results|length|pluralize }}
+        {% if q %} for "{{ q }}"{% endif %}
+    </p>
+
+    {% if results %}
+        <div class="row g-3" data-testid="results-grid">
+            {% for item in results %}
+                <div class="col-md-6 col-lg-4" data-testid="ingredient-card-{{ item.id }}">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <div>
+                                    <span class="badge bg-light text-dark border text-uppercase small">{{ item.category }}</span>
+                                    <h5 class="fw-bold mt-2 mb-0">{{ item.name }}</h5>
+                                </div>
+                            </div>
+
+                            <div class="row g-2 text-center my-3 py-2 border-top border-bottom">
+                                <div class="col">
+                                    <div class="fw-bold">{{ item.calories_per_100g }}</div>
+                                    <div class="small text-muted">kcal</div>
+                                </div>
+                                <div class="col">
+                                    <div class="fw-bold">{{ item.protein_g }}g</div>
+                                    <div class="small text-muted">protein</div>
+                                </div>
+                                <div class="col">
+                                    <div class="fw-bold">{{ item.carbs_g }}g</div>
+                                    <div class="small text-muted">carbs</div>
+                                </div>
+                                <div class="col">
+                                    <div class="fw-bold">{{ item.fat_g }}g</div>
+                                    <div class="small text-muted">fat</div>
+                                </div>
+                            </div>
+
+                            <ul class="small mb-3 ps-3">
+                                {% for b in item.benefits %}
+                                    <li>{{ b }}</li>
+                                {% endfor %}
+                            </ul>
+
+                            <div class="d-flex flex-wrap gap-1">
+                                {% for g in item.goals %}
+                                    <span class="badge rounded-pill bg-success-subtle text-success-emphasis border border-success-subtle">
+                                        {{ g|cut:"_"|title }}
+                                    </span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="card border-0 shadow-sm rounded-4 p-5 text-center" data-testid="empty-state">
+            <i class="bi bi-search display-4 text-muted mb-3"></i>
+            <h4 class="fw-bold">No ingredients match</h4>
+            <p class="text-muted mb-0">Try a different term or clear the filters.</p>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

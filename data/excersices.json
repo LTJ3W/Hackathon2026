@@ -1,0 +1,156 @@
+[
+    {
+        "id": 1,
+        "name": "Push-Up",
+        "category": "push",
+        "target_muscles": ["chest"],
+        "secondary_muscles": ["triceps", "shoulders"],
+        "equipment": ["bodyweight"],
+        "difficulty": "beginner",
+        "description": "A foundational upper-body push exercise.",
+        "goals": ["strength", "muscle_gain"]
+    },
+    {
+        "id": 2,
+        "name": "Bench Press",
+        "category": "push",
+        "target_muscles": ["chest"],
+        "secondary_muscles": ["triceps", "shoulders"],
+        "equipment": ["barbell"],
+        "difficulty": "intermediate",
+        "description": "A compound lift for chest strength and size.",
+        "goals": ["strength", "muscle_gain"]
+    },
+    {
+        "id": 3,
+        "name": "Overhead Shoulder Press",
+        "category": "push",
+        "target_muscles": ["shoulders"],
+        "secondary_muscles": ["triceps"],
+        "equipment": ["dumbbell", "barbell"],
+        "difficulty": "intermediate",
+        "description": "A vertical pressing movement for shoulder development.",
+        "goals": ["strength", "muscle_gain"]
+    },
+    {
+        "id": 4,
+        "name": "Tricep Dips",
+        "category": "push",
+        "target_muscles": ["triceps"],
+        "secondary_muscles": ["chest", "shoulders"],
+        "equipment": ["bodyweight"],
+        "difficulty": "beginner",
+        "description": "A bodyweight exercise for triceps strength.",
+        "goals": ["muscle_gain"]
+    },
+    {
+        "id": 5,
+        "name": "Pull-Up",
+        "category": "pull",
+        "target_muscles": ["back"],
+        "secondary_muscles": ["biceps", "shoulders"],
+        "equipment": ["bodyweight"],
+        "difficulty": "intermediate",
+        "description": "A compound upper-body pulling movement.",
+        "goals": ["strength", "muscle_gain"]
+    },
+    {
+        "id": 6,
+        "name": "Bent-Over Row",
+        "category": "pull",
+        "target_muscles": ["back"],
+        "secondary_muscles": ["biceps"],
+        "equipment": ["barbell", "dumbbell"],
+        "difficulty": "intermediate",
+        "description": "Builds thickness in the upper and mid back.",
+        "goals": ["strength", "muscle_gain"]
+    },
+    {
+        "id": 7,
+        "name": "Bicep Curl",
+        "category": "pull",
+        "target_muscles": ["biceps"],
+        "secondary_muscles": [],
+        "equipment": ["dumbbell", "barbell"],
+        "difficulty": "beginner",
+        "description": "An isolation exercise for the biceps.",
+        "goals": ["muscle_gain"]
+    },
+    {
+        "id": 8,
+        "name": "Squat",
+        "category": "legs",
+        "target_muscles": ["quads"],
+        "secondary_muscles": ["glutes", "hamstrings"],
+        "equipment": ["barbell"],
+        "difficulty": "intermediate",
+        "description": "A fundamental lower-body compound movement.",
+        "goals": ["strength", "muscle_gain"]
+    },
+    {
+        "id": 9,
+        "name": "Romanian Deadlift",
+        "category": "legs",
+        "target_muscles": ["hamstrings"],
+        "secondary_muscles": ["glutes"],
+        "equipment": ["barbell", "dumbbell"],
+        "difficulty": "intermediate",
+        "description": "Targets hamstrings and glutes through hip hinging.",
+        "goals": ["strength", "muscle_gain"]
+    },
+    {
+        "id": 10,
+        "name": "Calf Raises",
+        "category": "legs",
+        "target_muscles": ["calves"],
+        "secondary_muscles": [],
+        "equipment": ["bodyweight"],
+        "difficulty": "beginner",
+        "description": "Strengthens and builds calf muscles.",
+        "goals": ["muscle_gain"]
+    },
+    {
+        "id": 11,
+        "name": "Hip Thrust",
+        "category": "legs",
+        "target_muscles": ["glutes"],
+        "secondary_muscles": ["hamstrings"],
+        "equipment": ["barbell"],
+        "difficulty": "beginner",
+        "description": "One of the best exercises for glute activation.",
+        "goals": ["muscle_gain"]
+    },
+    {
+        "id": 12,
+        "name": "Crunches",
+        "category": "core",
+        "target_muscles": ["abs"],
+        "secondary_muscles": [],
+        "equipment": ["bodyweight"],
+        "difficulty": "beginner",
+        "description": "A basic abdominal exercise.",
+        "goals": ["core_strength"]
+    },
+    {
+        "id": 13,
+        "name": "Plank",
+        "category": "core",
+        "target_muscles": ["core"],
+        "secondary_muscles": ["shoulders"],
+        "equipment": ["bodyweight"],
+        "difficulty": "beginner",
+        "description": "Builds core stability and endurance.",
+        "goals": ["core_strength"]
+    },
+    {
+    "id": 14,
+    "name": "Dumbbell Bench Press",
+    "category": "push",
+    "target_muscles": ["chest"],
+    "secondary_muscles": ["triceps", "shoulders"],
+    "equipment": ["dumbbell"],
+    "difficulty": "beginner",
+    "description": "A beginner-friendly variation of the bench press using dumbbells, allowing for better control and balance.",
+    "goals": ["strength", "muscle_gain"]
+    }
+]

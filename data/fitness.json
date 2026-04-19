@@ -3381,6 +3381,278 @@
         ],
         "template_key": "intermediate_muscle_gain"
       }
+    },
+    {
+      "plan_number": 10,
+      "user_answers": {
+        "age": "12",
+        "height": "12",
+        "weight": "12",
+        "nutrition": "good",
+        "meals_per_day": "3-4",
+        "eat_out": "1-2",
+        "active": "yes",
+        "exercise_days": "1-2",
+        "goal": "lose_weight"
+      },
+      "plan": {
+        "level": "beginner",
+        "goal": "weight_loss",
+        "goal_label": "Lose Weight",
+        "title": "Beginner Fat-Loss Starter",
+        "description": "A 3-day push, pull, and legs routine built for beginners who want to lose fat while building basic strength and consistency.",
+        "benefits": "This plan helps increase calorie burn, improve workout consistency, and preserve muscle while losing weight.",
+        "days_per_week": 3,
+        "ingredient_priorities": [
+          {
+            "id": 1,
+            "name": "Chicken Breast",
+            "category": "protein",
+            "calories_per_100g": 165,
+            "protein_g": 31,
+            "carbs_g": 0,
+            "fat_g": 3.6,
+            "benefits": [
+              "High protein supports muscle growth and recovery",
+              "Low fat makes it ideal for weight loss diets"
+            ],
+            "goals": [
+              "muscle_gain",
+              "weight_loss"
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Tilapia",
+            "category": "protein",
+            "calories_per_100g": 129,
+            "protein_g": 26,
+            "carbs_g": 0,
+            "fat_g": 2.7,
+            "benefits": [
+              "Lean protein source",
+              "Low calorie option for weight loss"
+            ],
+            "goals": [
+              "weight_loss",
+              "muscle_gain"
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Tuna",
+            "category": "protein",
+            "calories_per_100g": 132,
+            "protein_g": 29,
+            "carbs_g": 0,
+            "fat_g": 1,
+            "benefits": [
+              "High protein and low fat",
+              "Supports muscle recovery"
+            ],
+            "goals": [
+              "weight_loss",
+              "muscle_gain"
+            ]
+          },
+          {
+            "id": 8,
+            "name": "Broccoli",
+            "category": "vegetable",
+            "calories_per_100g": 55,
+            "protein_g": 3.7,
+            "carbs_g": 11,
+            "fat_g": 0.6,
+            "benefits": [
+              "High in vitamins and fiber",
+              "Supports overall health and digestion"
+            ],
+            "goals": [
+              "weight_loss",
+              "general_health"
+            ]
+          },
+          {
+            "id": 10,
+            "name": "Asparagus",
+            "category": "vegetable",
+            "calories_per_100g": 20,
+            "protein_g": 2.2,
+            "carbs_g": 3.9,
+            "fat_g": 0.1,
+            "benefits": [
+              "Low calorie vegetable",
+              "Supports digestion and metabolism"
+            ],
+            "goals": [
+              "weight_loss"
+            ]
+          },
+          {
+            "id": 11,
+            "name": "Green Beans",
+            "category": "vegetable",
+            "calories_per_100g": 31,
+            "protein_g": 2,
+            "carbs_g": 7,
+            "fat_g": 0.2,
+            "benefits": [
+              "Low calorie and filling",
+              "Supports weight management"
+            ],
+            "goals": [
+              "weight_loss"
+            ]
+          }
+        ],
+        "workout_days": [
+          {
+            "day": 1,
+            "focus": "push",
+            "focus_label": "Push Day",
+            "cardio": "15 min incline walk after lifting",
+            "exercises": [
+              {
+                "id": 27,
+                "name": "Smith Machine Shoulder Press",
+                "category": "push",
+                "target_muscles": [
+                  "shoulders"
+                ],
+                "difficulty": "beginner",
+                "description": "A shoulder press performed on a Smith machine for added stability."
+              },
+              {
+                "id": 26,
+                "name": "Machine Shoulder Press",
+                "category": "push",
+                "target_muscles": [
+                  "shoulders"
+                ],
+                "difficulty": "beginner",
+                "description": "A machine-guided overhead pressing exercise for the shoulders."
+              },
+              {
+                "id": 15,
+                "name": "Overhead Tricep Extension",
+                "category": "push",
+                "target_muscles": [
+                  "triceps"
+                ],
+                "difficulty": "beginner",
+                "description": "An overhead movement that targets the triceps, especially the long head."
+              },
+              {
+                "id": 20,
+                "name": "Rope Pushdown",
+                "category": "push",
+                "target_muscles": [
+                  "triceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A tricep pushdown variation performed with a rope attachment."
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "focus": "pull",
+            "focus_label": "Pull Day",
+            "cardio": "15 min bike or elliptical",
+            "exercises": [
+              {
+                "id": 43,
+                "name": "Dumbbell Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A simple bicep curl variation using dumbbells."
+              },
+              {
+                "id": 46,
+                "name": "Cable Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A curl performed on a cable machine for constant tension."
+              },
+              {
+                "id": 42,
+                "name": "Barbell Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A classic arm exercise for building bicep strength and size."
+              },
+              {
+                "id": 47,
+                "name": "Concentration Curl",
+                "category": "pull",
+                "target_muscles": [
+                  "biceps"
+                ],
+                "difficulty": "beginner",
+                "description": "A seated single-arm curl that isolates the biceps."
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "focus": "legs",
+            "focus_label": "Leg Day",
+            "cardio": "10 min incline treadmill cool-down",
+            "exercises": [
+              {
+                "id": 76,
+                "name": "Seated Calf Raise",
+                "category": "legs",
+                "target_muscles": [
+                  "calves"
+                ],
+                "difficulty": "beginner",
+                "description": "A seated calf exercise that isolates the calf muscles."
+              },
+              {
+                "id": 78,
+                "name": "Single Leg Calf Raise",
+                "category": "legs",
+                "target_muscles": [
+                  "calves"
+                ],
+                "difficulty": "beginner",
+                "description": "A unilateral calf raise variation for lower-leg strength and balance."
+              },
+              {
+                "id": 62,
+                "name": "Step-Up",
+                "category": "legs",
+                "target_muscles": [
+                  "quads"
+                ],
+                "difficulty": "beginner",
+                "description": "A functional lower-body exercise performed by stepping onto an elevated surface."
+              },
+              {
+                "id": 67,
+                "name": "Lying Leg Curl",
+                "category": "legs",
+                "target_muscles": [
+                  "hamstrings"
+                ],
+                "difficulty": "beginner",
+                "description": "A machine isolation exercise for the hamstrings."
+              }
+            ]
+          }
+        ],
+        "template_key": "beginner_weight_loss"
+      }
     }
   ]
 }

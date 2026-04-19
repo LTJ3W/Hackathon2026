@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1,
+        "name": "Chicken Breast",
+        "category": "protein",
+        "calories_per_100g": 165,
+        "protein_g": 31,
+        "carbs_g": 0,
+        "fat_g": 3.6,
+        "benefits": [
+        "High protein supports muscle growth and recovery",
+        "Low fat makes it ideal for weight loss diets"
+        ],
+        "goals": ["muscle_gain", "weight_loss"]
+    },
+    {
+        "id": 2,
+        "name": "Beef",
+        "category": "protein",
+        "calories_per_100g": 250,
+        "protein_g": 26,
+        "carbs_g": 0,
+        "fat_g": 15,
+        "benefits": [
+        "Rich in iron and supports strength",
+        "High protein content helps muscle growth"
+        ],
+        "goals": ["muscle_gain"]
+    },
+    {
+        "id": 3,
+        "name": "Tilapia",
+        "category": "protein",
+        "calories_per_100g": 129,
+        "protein_g": 26,
+        "carbs_g": 0,
+        "fat_g": 2.7,
+        "benefits": [
+        "Lean protein source",
+        "Low calorie option for weight loss"
+        ],
+        "goals": ["weight_loss", "muscle_gain"]
+    },
+    {
+        "id": 4,
+        "name": "Tuna",
+        "category": "protein",
+        "calories_per_100g": 132,
+        "protein_g": 29,
+        "carbs_g": 0,
+        "fat_g": 1,
+        "benefits": [
+        "High protein and low fat",
+        "Supports muscle recovery"
+        ],
+        "goals": ["weight_loss", "muscle_gain"]
+    },
+    {
+        "id": 5,
+        "name": "Quinoa",
+        "category": "carbohydrate",
+        "calories_per_100g": 120,
+        "protein_g": 4,
+        "carbs_g": 21,
+        "fat_g": 2,
+        "benefits": [
+        "Contains complete protein",
+        "Provides sustained energy"
+        ],
+        "goals": ["muscle_gain", "weight_loss"]
+    },
+    {
+        "id": 6,
+        "name": "White Rice",
+        "category": "carbohydrate",
+        "calories_per_100g": 130,
+        "protein_g": 2.7,
+        "carbs_g": 28,
+        "fat_g": 0.3,
+        "benefits": [
+        "Quick source of energy",
+        "Easy to digest"
+        ],
+        "goals": ["muscle_gain"]
+    },
+    {
+        "id": 7,
+        "name": "Beans",
+        "category": "carbohydrate",
+        "calories_per_100g": 140,
+        "protein_g": 9,
+        "carbs_g": 25,
+        "fat_g": 0.5,
+        "benefits": [
+        "High fiber helps digestion",
+        "Provides plant-based protein"
+        ],
+        "goals": ["weight_loss", "muscle_gain"]
+    },
+    {
+        "id": 8,
+        "name": "Broccoli",
+        "category": "vegetable",
+        "calories_per_100g": 55,
+        "protein_g": 3.7,
+        "carbs_g": 11,
+        "fat_g": 0.6,
+        "benefits": [
+        "High in vitamins and fiber",
+        "Supports overall health and digestion"
+        ],
+        "goals": ["weight_loss", "general_health"]
+    },
+    {
+        "id": 9,
+        "name": "Tomatoes",
+        "category": "vegetable",
+        "calories_per_100g": 18,
+        "protein_g": 0.9,
+        "carbs_g": 3.9,
+        "fat_g": 0.2,
+        "benefits": [
+        "Rich in antioxidants",
+        "Supports heart health"
+        ],
+        "goals": ["general_health"]
+    },
+    {
+        "id": 10,
+        "name": "Asparagus",
+        "category": "vegetable",
+        "calories_per_100g": 20,
+        "protein_g": 2.2,
+        "carbs_g": 3.9,
+        "fat_g": 0.1,
+        "benefits": [
+        "Low calorie vegetable",
+        "Supports digestion and metabolism"
+        ],
+        "goals": ["weight_loss"]
+    },
+    {
+        "id": 11,
+        "name": "Green Beans",
+        "category": "vegetable",
+        "calories_per_100g": 31,
+        "protein_g": 2,
+        "carbs_g": 7,
+        "fat_g": 0.2,
+        "benefits": [
+        "Low calorie and filling",
+        "Supports weight management"
+        ],
+        "goals": ["weight_loss"]
+    },
+    {
+        "id": 12,
+        "name": "Mushrooms",
+        "category": "vegetable",
+        "calories_per_100g": 22,
+        "protein_g": 3.1,
+        "carbs_g": 3.3,
+        "fat_g": 0.3,
+        "benefits": [
+        "Low calorie and nutrient dense",
+        "Supports immune system"
+        ],
+        "goals": ["weight_loss", "general_health"]
+    },
+    {
+        "id": 13,
+        "name": "Honey",
+        "category": "sugar",
+        "calories_per_100g": 304,
+        "protein_g": 0,
+        "carbs_g": 82,
+        "fat_g": 0,
+        "benefits": [
+        "Quick energy source",
+        "Natural sweetener"
+        ],
+        "goals": ["energy"]
+    },
+    {
+        "id": 14,
+        "name": "Cucumber",
+        "category": "vegetable",
+        "calories_per_100g": 16,
+        "protein_g": 0.7,
+        "carbs_g": 3.6,
+        "fat_g": 0.1,
+        "benefits": [
+        "Very low calorie",
+        "Helps hydration"
+        ],
+        "goals": ["weight_loss"]
+    },
+    {
+        "id": 15,
+        "name": "Green Apple",
+        "category": "fruit",
+        "calories_per_100g": 52,
+        "protein_g": 0.3,
+        "carbs_g": 14,
+        "fat_g": 0.2,
+        "benefits": [
+        "High fiber supports fullness",
+        "Helps control appetite"
+        ],
+        "goals": ["weight_loss"]
+    },
+    {
+        "id": 16,
+        "name": "Whole Wheat Bread",
+        "category": "carbohydrate",
+        "calories_per_100g": 247,
+        "protein_g": 13,
+        "carbs_g": 41,
+        "fat_g": 4,
+        "benefits": [
+        "Provides sustained energy",
+        "Contains fiber for digestion"
+        ],
+        "goals": ["muscle_gain"]
+    },
+    {
+        "id": 17,
+        "name": "Water",
+        "category": "hydration",
+        "calories_per_100g": 0,
+        "protein_g": 0,
+        "carbs_g": 0,
+        "fat_g": 0,
+        "benefits": [
+        "Essential for hydration",
+        "Supports metabolism and recovery"
+        ],
+        "goals": ["general_health", "weight_loss", "muscle_gain"]
+    },
+    {
+        "id": 18,
+        "name": "Cauliflower",
+        "category": "vegetable",
+        "calories_per_100g": 25,
+        "protein_g": 1.9,
+        "carbs_g": 5,
+        "fat_g": 0.3,
+        "benefits": [
+        "Low calorie alternative to carbs",
+        "Supports weight loss"
+        ],
+        "goals": ["weight_loss"]
+    },
+    {
+        "id": 19,
+        "name": "Salmon",
+        "category": "protein",
+        "calories_per_100g": 208,
+        "protein_g": 20,
+        "carbs_g": 0,
+        "fat_g": 13,
+        "benefits": [
+        "Rich in omega-3 fatty acids",
+        "Supports muscle recovery and heart health"
+        ],
+        "goals": ["muscle_gain", "general_health"]
+    },
+    {
+        "id": 20,
+        "name": "Banana",
+        "category": "fruit",
+        "calories_per_100g": 89,
+        "protein_g": 1.1,
+        "carbs_g": 23,
+        "fat_g": 0.3,
+        "benefits": [
+        "Quick energy source",
+        "Good for pre-workout fuel"
+        ],
+        "goals": ["energy", "muscle_gain"]
+    },
+    {
+        "id": 21,
+        "name": "Eggs",
+        "category": "protein",
+        "calories_per_100g": 155,
+        "protein_g": 13,
+        "carbs_g": 1.1,
+        "fat_g": 11,
+        "benefits": [
+            "High-quality complete protein that supports muscle growth and repair",
+            "Rich in essential nutrients like vitamin B12 and choline",
+            "Helps keep you full, which can support weight management"
+        ],
+        "fitness_impact": {
+            "weight_loss": "Helpful due to high protein and satiety, keeping you full longer.",
+            "muscle_gain": "Excellent for muscle repair and growth due to complete protein.",
+            "general_health": "Supports brain function and overall nutrition."
+        },
+        "goals": ["muscle_gain", "weight_loss", "general_health"]
+    }
+]
